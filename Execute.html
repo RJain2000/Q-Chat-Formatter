@@ -1,0 +1,70 @@
+	<!doctype html>
+
+	<html>
+
+
+	<script type="text/javascript" src="cleanfile.js">
+	</script>
+
+	<script type="text/javascript">
+
+		function runmain() {
+			var p1 = document.getElementById("chatdata").value;
+			var p2 = document.getElementById("timelimit").value;	
+
+			main(p1, p2);
+		}
+
+	</script>
+
+
+	<body id="body" style="background-color:honeydew">
+
+		<! HEADER -->
+
+		<p style="text-align:center;font-size:30px;letter-spacing:5px;margin:0px"> Welcome to the </p>
+
+		<p style="text-align:center;font-size:60px;font-weight:bold;margin:0px;vertical-align:top">
+			Q CHAT FORMATTER
+		</p>
+
+		<! RAINBOW FLAG BANNER -->
+		<p style="margin-top:0px;margin-bottom:15px;text-align:center">
+			<img src="images/rainbowflag.png" style="height:60px;width:99vw;vertical-align:middle" alt="Rainbow Flag">
+		</p>
+
+
+		<textarea id="chatdata" style="height:200px;width:600px" placeholder="Paste Chat Data Here"></textarea>
+		
+		<br>
+		<br>
+
+		Time limit for facilitators to <b>greet users</b>:
+		<input style="width:10px" type="text" id="timelimit" value=3> </input>	
+		minutes
+
+		<br>
+		<br>
+
+		<! -- does NOT access reply threads -->
+
+		<button style="font-weight:bold" type=button onclick=runmain()>
+			Run Analysis
+		</button>
+
+		<br> <br>
+
+		<form>
+			<input style="padding-left:30px;padding-right:30px;font-weight:bold" type=submit value="Reset"> </submit>
+		</form>
+
+		<p id="test"> </p>
+
+		<p id="data" style="font-size:30px"> </p>
+
+		<p id="cleaned" style="font-size:20px;font-family:TimesNewRoman"> </p>
+
+
+	</body>
+
+	</html>
